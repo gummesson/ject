@@ -10,7 +10,7 @@
     "uglify-js": "^2.4.13"
   },
   "scripts": {
-    "test": "browserify test/index.js | tape-run",
+    "test": "browserify test/index.js | tape-run -b phantom",
     "build": "browserify -s ject index.js -o dist/ject.js",
     "minify": "uglifyjs dist/ject.js -m -o dist/ject.min.js",
     "dist": "npm run build && npm run minify"
