@@ -1,7 +1,5 @@
 # Ject
 
-[![Build Status](https://travis-ci.org/gummesson/ject.png?branch=master)](https://travis-ci.org/gummesson/ject)
-
 A tiny string interpolation utility. It supports Internet Explorer 9+ and works with [Browserify](http://browserify.org/) or as a standalone library.
 
 ## Installation
