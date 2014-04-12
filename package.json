@@ -1,0 +1,32 @@
+{
+  "name": "ject",
+  "version": "0.1.0",
+  "description": "A tiny string interpolation utility.",
+  "main": "index.js",
+  "devDependencies": {
+    "tape": "~2.12.3",
+    "tape-run": "^0.1.1",
+    "browserify": "^3.41.0",
+    "uglify-js": "^2.4.13"
+  },
+  "scripts": {
+    "test": "browserify test/index.js | tape-run",
+    "build": "browserify -s ject index.js -o dist/ject.js",
+    "minify": "uglifyjs dist/ject.js -m -o dist/ject.min.js",
+    "dist": "npm run build && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gummesson/ject.git"
+  },
+  "keywords": [
+    "string",
+    "interpolation"
+  ],
+  "author": "Ellen Gummesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gummesson/ject/issues"
+  },
+  "homepage": "https://github.com/gummesson/ject"
+}

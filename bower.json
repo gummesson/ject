@@ -1,0 +1,24 @@
+{
+  "name": "ject",
+  "main": "dist/ject.js",
+  "version": "0.1.0",
+  "authors": [
+    "Ellen Gummesson <ellengummesson@gmail.com>"
+  ],
+  "description": "A tiny string interpolation utility.",
+  "keywords": [
+    "string",
+    "interpolation"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/gummesson/ject",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json",
+    "index.js"
+  ]
+}
