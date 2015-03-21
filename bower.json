@@ -1,7 +1,7 @@
 {
   "name": "ject",
   "main": "dist/ject.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "Ellen Gummesson <ellengummesson@gmail.com>"
   ],
