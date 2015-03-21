@@ -1,5 +1,5 @@
 /**
- * Replace tags in `str` with property values in `obj`.
+ * Replace template tags in `str` with property values in `obj`.
  *
  * @param  {string} str
  * @param  {object} obj
