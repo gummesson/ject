@@ -1,6 +1,11 @@
 # Ject
 
-A tiny string interpolation utility. It supports Internet Explorer 9+ and works with [Browserify](http://browserify.org/) or as a standalone library.
+[![NPM version][npm-img]][npm-url]
+[![License][license-img]][license-url]
+[![Build status][travis-img]][travis-url]
+
+A tiny string interpolation utility. It supports Internet Explorer 9+ and works
+with [Browserify](http://browserify.org/) or as a standalone library.
 
 ## Installation
 
@@ -49,3 +54,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+[npm-img]: https://img.shields.io/npm/v/ject.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/ject
+[license-img]: http://img.shields.io/npm/l/ject.svg?style=flat-square
+[license-url]: LICENSE
+[travis-img]: https://img.shields.io/travis/gummesson/ject.svg?style=flat-square
+[travis-url]: https://travis-ci.org/gummesson/ject
