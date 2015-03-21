@@ -3,20 +3,6 @@
   "version": "1.0.0",
   "description": "A tiny string interpolation utility.",
   "main": "index.js",
-  "devDependencies": {
-    "browserify": "^9.0.3",
-    "smokestack": "^3.2.1",
-    "tap-closer": "^1.0.0",
-    "tape": "~3.5.0",
-    "uglify-js": "^2.4.17"
-  },
-  "scripts": {
-    "test": "node test/",
-    "test:browser": "browserify test/ | tap-closer | smokestack",
-    "build": "npm run build:js && npm run build:js:min",
-    "build:js": "browserify -s ject index.js -o dist/ject.js",
-    "build:js:min": "uglifyjs dist/ject.js -m -o dist/ject.min.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gummesson/ject.git"
@@ -30,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/gummesson/ject/issues"
   },
-  "homepage": "https://github.com/gummesson/ject"
+  "homepage": "https://github.com/gummesson/ject",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "smokestack": "^3.2.1",
+    "tap-closer": "^1.0.0",
+    "tape": "~3.5.0",
+    "uglify-js": "^2.4.17"
+  },
+  "scripts": {
+    "test": "node test/",
+    "test:browser": "browserify test/ | tap-closer | smokestack",
+    "build": "npm run build:js && npm run build:js:min",
+    "build:js": "browserify -s ject index.js -o dist/ject.js",
+    "build:js:min": "uglifyjs dist/ject.js -m -o dist/ject.min.js"
+  }
 }
