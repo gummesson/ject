@@ -26,15 +26,6 @@ var str = ject('{{greeting}}, {{name}}!', {
 // => "Hello, anonymous!"
 ~~~
 
-## Tests
-
-[PhantomJS](http://phantomjs.org/) is required.
-
-~~~ text
-npm install
-npm test
-~~~
-
 ## License
 
 The MIT License (MIT)
