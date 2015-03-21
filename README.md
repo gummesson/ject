@@ -22,7 +22,7 @@ bower install ject --save
 var str = ject('{{greeting}}, {{name}}!', {
   greeting: 'Hello',
   name: 'anonymous'
-});
+})
 // => "Hello, anonymous!"
 ~~~
 
