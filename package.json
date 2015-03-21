@@ -4,16 +4,18 @@
   "description": "A tiny string interpolation utility.",
   "main": "index.js",
   "devDependencies": {
-    "tape": "~2.12.3",
-    "tape-run": "^0.1.1",
-    "browserify": "^3.41.0",
-    "uglify-js": "^2.4.13"
+    "browserify": "^9.0.3",
+    "smokestack": "^3.2.1",
+    "tap-closer": "^1.0.0",
+    "tape": "~3.5.0",
+    "uglify-js": "^2.4.17"
   },
   "scripts": {
-    "test": "browserify test/index.js | tape-run -b phantom",
-    "build": "browserify -s ject index.js -o dist/ject.js",
-    "minify": "uglifyjs dist/ject.js -m -o dist/ject.min.js",
-    "dist": "npm run build && npm run minify"
+    "test": "node test/",
+    "test:browser": "browserify test/ | tap-closer | smokestack",
+    "build": "npm run build:js && npm run build:js:min",
+    "build:js": "browserify -s ject index.js -o dist/ject.js",
+    "build:js:min": "uglifyjs dist/ject.js -m -o dist/ject.min.js"
   },
   "repository": {
     "type": "git",
