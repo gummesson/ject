@@ -1,23 +1,25 @@
-/* Modules */
+/**
+ * Dependencies
+ */
 
-var test = require('tape');
-var ject = require('../');
+var test = require('tape')
+var ject = require('../')
 
-/* Tests */
+/**
+ * Tests
+ */
 
-test('ject()', function(assert) {
-  var str = ject('Hello, {{name}}!', {
+test('ject(str, obj)', function(assert) {
+  var single = ject('Hello, {{name}}!', {
     name: 'anonymous'
-  });
-  assert.equal(str, 'Hello, anonymous!');
-  assert.end();
-});
+  })
 
-test('ject()', function(assert) {
-  var str = ject('{{greeting}}, {{name}}!', {
+  var multiple = ject('{{greeting}}, {{name}}!', {
     greeting: 'Hello',
     name: 'anonymous'
-  });
-  assert.equal(str, 'Hello, anonymous!');
-  assert.end();
-});
+  })
+
+  assert.equal(single, 'Hello, anonymous!')
+  assert.equal(multiple, 'Hello, anonymous!')
+  assert.end()
+})
