@@ -9,7 +9,7 @@
  */
 
 function ject(str, obj) {
-  var keys = str.match(/({{.+?}})/g)
+  var keys = str.match(/({{.+?}})/g) || []
   keys.forEach(function(v, i) {
     var key = keys[i].replace(/{{(.+)}}/, '$1')
     var val = obj[key]

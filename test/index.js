@@ -10,6 +10,10 @@ var ject = require('../')
  */
 
 test('ject(str, obj)', function(assert) {
+  var none = ject('Hello there!', {
+    name: 'anonymous'
+  })
+
   var single = ject('Hello, {{name}}!', {
     name: 'anonymous'
   })
@@ -19,6 +23,7 @@ test('ject(str, obj)', function(assert) {
     name: 'anonymous'
   })
 
+  assert.equal(none, 'Hello there!')
   assert.equal(single, 'Hello, anonymous!')
   assert.equal(multiple, 'Hello, anonymous!')
   assert.end()
